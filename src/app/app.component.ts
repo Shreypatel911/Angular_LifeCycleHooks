@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'component-lifecycle';
+  value : string = '';
+  destroy : boolean = true;
+  
+
+  onSubmit(input : HTMLInputElement){
+    this.value = input.value;
+  }
+
+  onDestroy(){
+    this.destroy = false;
+  }
 }
+//pop up in form 
+//file upload in form 
+//confirmation pop up on deleting the entry
