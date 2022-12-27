@@ -31,6 +31,7 @@ export class DemoComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   }
 
   //Only once when the projected values from the parent to the child are initialized(<ng-content> </ng-content>)
+  //This method is called only once during the component’s lifecycle, after the first ngDoCheck
   ngAfterContentInit(): void {
     console.log("ngAfterContentInit is called");
   }
