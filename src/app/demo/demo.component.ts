@@ -42,6 +42,7 @@ export class DemoComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
 
   //Whenever there is a change detected by change detection cycle and after the constructor
   //Input variables are initialized and you can accessed it
+  //Whenever there is change in input variables of the component
   ngOnChanges(changes: SimpleChanges): void {
     console.log("ngOnChanges is called");
   }
